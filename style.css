@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: fixed;
+    width: 100%;
+    background: rgba(15,23,42,0.7);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #e5e7eb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(120deg, #020617, #0f172a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    max-width: 700px;
+}
+
+.hero-content span {
+    color: #38bdf8;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #cbd5f5;
+}
+
+.hero button {
+    padding: 15px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: #38bdf8;
+    color: #020617;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 20px auto;
+    color: #cbd5f5;
+}
+
+/* SERVICES */
+.service-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 260px;
+    transition: 0.4s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background: rgba(56,189,248,0.15);
+}
+
+/* CONTACT */
+.contact {
+    background: linear-gradient(120deg, #020617, #020617);
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background: #22c55e;
+    color: #020617;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: #64748b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 34px;
+    }
+    .navbar {
+        padding: 15px 30px;
+    }
+}
